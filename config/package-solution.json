@@ -1,0 +1,40 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
+  "solution": {
+    "name": "spfx-test-fluent-ui-theme",
+    "id": "cadb6699-a093-4a70-8ee6-4bbbbef0af37",
+    "version": "1.0.0.0",
+    "includeClientSideAssets": true,
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "developer": {
+      "name": "",
+      "websiteUrl": "",
+      "privacyUrl": "",
+      "termsOfUseUrl": "",
+      "mpnId": "Undefined-1.14.0"
+    },
+    "metadata": {
+      "shortDescription": {
+        "default": "spfx-test-fluent-ui-theme"
+      },
+      "longDescription": {
+        "default": "spfx-test-fluent-ui-theme"
+      },
+      "screenshotPaths": [],
+      "videoUrl": "",
+      "categories": []
+    },
+    "features": [
+      {
+        "title": "spfx-test-fluent-ui-theme Feature",
+        "description": "The feature that activates elements of the sp-fx-hc-teams-theme solution.",
+        "id": "6b8f1d2f-56e2-4ff5-87be-accd9fd6aad7",
+        "version": "1.0.0.0"
+      }
+    ]
+  },
+  "paths": {
+    "zippedPackage": "solution/spfx-test-fluent-ui-theme.sppkg"
+  }
+}

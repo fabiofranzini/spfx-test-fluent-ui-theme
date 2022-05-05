@@ -1,0 +1,16 @@
+{
+  "@microsoft/generator-sharepoint": {
+    "plusBeta": false,
+    "isCreatingSolution": false,
+    "version": "1.14.0",
+    "libraryName": "sp-fx-hc-teams-theme",
+    "libraryId": "cadb6699-a093-4a70-8ee6-4bbbbef0af37",
+    "environment": "spo",
+    "packageManager": "npm",
+    "solutionName": "sp-fx-hc-teams-theme",
+    "solutionShortDescription": "sp-fx-hc-teams-theme description",
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "componentType": "webpart"
+  }
+}
