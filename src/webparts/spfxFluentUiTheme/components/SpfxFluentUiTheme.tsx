@@ -1,6 +1,6 @@
 import { TestImages, facepilePersonas } from '@fluentui/example-data';
 import { Breadcrumb, Calendar, Checkbox, ChoiceGroup, ColorPicker, ComboBox, CommandBar, CommandBarButton, ContextualMenu, DatePicker, DateRangeType, DayOfWeek, DefaultButton, DetailsList, DetailsListLayoutMode, DocumentCard, DocumentCardActivity, DocumentCardPreview, DocumentCardTitle, Dropdown, Facepile, IconButton, ImageFit, INavLink, ITag, Label, Link, MessageBar, MessageBarButton, MessageBarType, Nav, Persona, PersonaPresence, PersonaSize, Pivot, PivotItem, PrimaryButton, ProgressIndicator, Rating, RatingSize, SearchBox, SelectableOptionMenuItemType, Shimmer, Slider, SpinButton, Spinner, SpinnerSize, Stack, SwatchColorPicker, TagPicker, Text, TextField, Toggle } from 'office-ui-fabric-react';
-import { ThemeProvider } from 'office-ui-fabric-react/lib/Foundation';
+import { ThemeProvider } from '@fluentui/react-theme-provider';
 import * as React from 'react';
 import { getCustomHCTheme } from '../getCustomHCTheme';
 import { ISpfxFluentUiThemeProps } from './ISpfxFluentUiThemeProps';
