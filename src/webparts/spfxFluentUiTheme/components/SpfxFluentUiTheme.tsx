@@ -1,7 +1,21 @@
-import { TestImages, facepilePersonas } from '@fluentui/example-data';
-import { Breadcrumb, Calendar, Checkbox, ChoiceGroup, ColorPicker, ComboBox, CommandBar, CommandBarButton, ContextualMenu, DatePicker, DateRangeType, DayOfWeek, DefaultButton, DetailsList, DetailsListLayoutMode, DocumentCard, DocumentCardActivity, DocumentCardPreview, DocumentCardTitle, Dropdown, Facepile, IconButton, ImageFit, INavLink, ITag, Label, Link, MessageBar, MessageBarButton, MessageBarType, Nav, Persona, PersonaPresence, PersonaSize, Pivot, PivotItem, PrimaryButton, ProgressIndicator, Rating, RatingSize, SearchBox, SelectableOptionMenuItemType, Shimmer, Slider, SpinButton, Spinner, SpinnerSize, Stack, SwatchColorPicker, TagPicker, Text, TextField, Toggle } from 'office-ui-fabric-react';
-import { ThemeProvider } from 'office-ui-fabric-react/lib/Foundation';
+import { facepilePersonas, TestImages } from '@fluentui/example-data';
+import { ThemeProvider } from '@fluentui/react-theme-provider';
+import { Breadcrumb, Checkbox, ChoiceGroup, ColorPicker, ComboBox, CommandBar, CommandBarButton, ContextualMenu, 
+  DatePicker, DayOfWeek, DefaultButton, DetailsList, DetailsListLayoutMode, DocumentCard, DocumentCardActivity, 
+  DocumentCardPreview, DocumentCardTitle, Dropdown, Facepile, IconButton, ImageFit, INavLink, ITag, Label, Link, 
+  MessageBar, MessageBarButton, MessageBarType, Nav, Persona, PersonaPresence, PersonaSize, Pivot, PivotItem, 
+  PrimaryButton, ProgressIndicator, Rating, RatingSize, SearchBox, SelectableOptionMenuItemType, Shimmer, Slider, 
+  SpinButton, Spinner, SpinnerSize, Stack, SwatchColorPicker, TagPicker, Text, TextField, Toggle } from 'office-ui-fabric-react';
+// import {
+//   Breadcrumb, Checkbox, ChoiceGroup, ColorPicker, ComboBox, CommandBar, CommandBarButton, ContextualMenu,
+//   DatePicker, DayOfWeek, DefaultButton, DetailsList, DetailsListLayoutMode, DocumentCard, DocumentCardActivity,
+//   DocumentCardPreview, DocumentCardTitle, Dropdown, Facepile, IconButton, ImageFit, INavLink, ITag, Label, Link,
+//   MessageBar, MessageBarButton, MessageBarType, Nav, Persona, PersonaPresence, PersonaSize, Pivot, PivotItem,
+//   PrimaryButton, ProgressIndicator, Rating, RatingSize, SearchBox, SelectableOptionMenuItemType, Shimmer, Slider,
+//   SpinButton, Spinner, SpinnerSize, Stack, SwatchColorPicker, TagPicker, Text, TextField, Toggle
+// } from '@fluentui/react';
 import * as React from 'react';
+import { getThemeFromFluent9Theme } from '../../../FluentThemeHelper';
 import { ISpfxFluentUiThemeProps } from './ISpfxFluentUiThemeProps';
 
 const stackTokens = { childrenGap: 10 };
@@ -47,7 +61,7 @@ export default class SpfxFluentUiTheme extends React.Component<ISpfxFluentUiThem
 
     return (
       <div style={{ margin: "10px" }}>
-        <ThemeProvider>
+        <ThemeProvider applyTo="element" theme={getThemeFromFluent9Theme("contrast")}>
           <h1>Test Theme for Fluent UI Controls</h1>
           <p>This Web Part contains most, but not all, of the Fluent UI controls available for the current version (1.14) of SPFx and is intended for testing the controls with the various themes applied.</p>
 
@@ -135,7 +149,7 @@ export default class SpfxFluentUiTheme extends React.Component<ISpfxFluentUiThem
                 { key: 'D', text: 'Option D' },
               ]} label="Pick one" required={true} />
               <ChoiceGroup label="Pick one image" defaultSelectedKey="bar" options={[
-                { key: 'day', text: 'Day', iconProps: { iconName: 'CalendarDay' }, checked: true },
+                { key: 'day', text: 'Day', iconProps: { iconName: 'CalendarDay' } },
                 { key: 'week', text: 'Week', iconProps: { iconName: 'CalendarWeek' } },
                 { key: 'month', text: 'Month', iconProps: { iconName: 'Calendar' }, disabled: true },
               ]} />
