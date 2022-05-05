@@ -2,6 +2,7 @@ import { TestImages, facepilePersonas } from '@fluentui/example-data';
 import { Breadcrumb, Calendar, Checkbox, ChoiceGroup, ColorPicker, ComboBox, CommandBar, CommandBarButton, ContextualMenu, DatePicker, DateRangeType, DayOfWeek, DefaultButton, DetailsList, DetailsListLayoutMode, DocumentCard, DocumentCardActivity, DocumentCardPreview, DocumentCardTitle, Dropdown, Facepile, IconButton, ImageFit, INavLink, ITag, Label, Link, MessageBar, MessageBarButton, MessageBarType, Nav, Persona, PersonaPresence, PersonaSize, Pivot, PivotItem, PrimaryButton, ProgressIndicator, Rating, RatingSize, SearchBox, SelectableOptionMenuItemType, Shimmer, Slider, SpinButton, Spinner, SpinnerSize, Stack, SwatchColorPicker, TagPicker, Text, TextField, Toggle } from 'office-ui-fabric-react';
 import { ThemeProvider } from 'office-ui-fabric-react/lib/Foundation';
 import * as React from 'react';
+import { getCustomHCTheme } from '../getCustomHCTheme';
 import { ISpfxFluentUiThemeProps } from './ISpfxFluentUiThemeProps';
 
 const stackTokens = { childrenGap: 10 };
@@ -45,9 +46,11 @@ export default class SpfxFluentUiTheme extends React.Component<ISpfxFluentUiThem
       currentTheme
     } = this.props;
 
+    let theme = getCustomHCTheme();
+
     return (
       <div style={{ margin: "10px" }}>
-        <ThemeProvider>
+        <ThemeProvider theme={theme}>
           <h1>Test Theme for Fluent UI Controls</h1>
           <p>This Web Part contains most, but not all, of the Fluent UI controls available for the current version (1.14) of SPFx and is intended for testing the controls with the various themes applied.</p>
 
