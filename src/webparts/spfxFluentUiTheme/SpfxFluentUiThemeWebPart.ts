@@ -9,8 +9,7 @@ import { BaseClientSideWebPart } from '@microsoft/sp-webpart-base';
 import { IReadonlyTheme } from '@microsoft/sp-component-base';
 
 import * as strings from 'SpfxFluentUiThemeWebPartStrings';
-import SpfxFluentUiTheme from './components/SpfxFluentUiTheme';
-import { ISpfxFluentUiThemeProps } from './components/ISpfxFluentUiThemeProps';
+import SpfxFluentUiTheme, { ISpfxFluentUiThemeProps } from './components/SpfxFluentUiTheme';
 
 export interface ISpfxFluentUiThemeWebPartProps {
   description: string;
